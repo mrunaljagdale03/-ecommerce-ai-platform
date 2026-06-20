@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-ai-hub",
+  "version": "1.0.0",
+  "description": "AI-powered Multi-Vendor E-commerce Platform",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:build": "cd backend && npm install",
+    "frontend:build": "cd frontend && npm install",
+    "setup": "npm run backend:build && npm run frontend:build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": ["ecommerce", "ai", "fullstack", "nodejs", "nextjs"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
